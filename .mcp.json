@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "zuckerbot": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "zuckerbot-mcp@0.4.10"
+      ],
+      "env": {
+        "ZUCKERBOT_API_KEY": ""
+      }
+    }
+  }
+}

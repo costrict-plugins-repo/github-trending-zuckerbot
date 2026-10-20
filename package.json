@@ -1,0 +1,63 @@
+{
+  "name": "zuckerbot-mcp",
+  "version": "0.4.10",
+  "description": "CLI + MCP server for ZuckerBot — manage, audit and generate Meta ad campaigns from Claude or any AI agent",
+  "type": "module",
+  "bin": {
+    "zuckerbot-mcp": "dist/index.js",
+    "zuckerbot": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "check:smoke": "npm run build && node scripts/contract-smoke.mjs",
+    "check:public": "tsx scripts/public-contract-check.ts",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "zuckerbot",
+    "facebook-ads",
+    "meta-ads",
+    "ai-agents",
+    "advertising",
+    "claude",
+    "openai",
+    "llm"
+  ],
+  "author": "DatalisHQ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DatalisHQ/zuckerbot.git"
+  },
+  "homepage": "https://zuckerbot.ai",
+  "bugs": {
+    "url": "https://github.com/DatalisHQ/zuckerbot/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "ora": "^9.3.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "mcpName": "io.github.Crumbedsausage/zuckerbot"
+}

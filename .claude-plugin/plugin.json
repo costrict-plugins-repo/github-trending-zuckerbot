@@ -1,0 +1,26 @@
+{
+  "name": "zuckerbot",
+  "displayName": "ZuckerBot — Meta Ads Toolkit",
+  "version": "0.4.10",
+  "description": "60+ tools for Meta account audits, campaign management, creative analysis, audiences and conversion tracking.",
+  "author": {
+    "name": "DatalisHQ"
+  },
+  "homepage": "https://zuckerbot.ai",
+  "repository": "https://github.com/DatalisHQ/zuckerbot",
+  "license": "MIT",
+  "categories": [
+    "marketing",
+    "advertising",
+    "analytics"
+  ],
+  "keywords": [
+    "meta",
+    "facebook",
+    "ads",
+    "campaigns",
+    "marketing",
+    "mcp"
+  ],
+  "icon": "🎯"
+}
